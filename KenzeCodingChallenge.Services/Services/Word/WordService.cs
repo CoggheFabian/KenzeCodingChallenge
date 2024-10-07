@@ -37,7 +37,6 @@ namespace KenzeCodingChallenge.Services.Services.Word
                 {
                     if (!wordCombinations.ContainsKey(key))
                     {
-
                         wordCombinations.Add(key, new List<string>(wordCombinationsThatCanStillFit));
                     }
                 }

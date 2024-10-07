@@ -26,7 +26,7 @@ namespace KenzeCodingChallenge.Tests
         {
             // Arrange
             var allWords = new List<string> { "foobar", "fo", "bar", "baz", "ob" };
-            var criteria = new WordCombinationCriteria(maximumLength: 6, minimumWords: 2, maximumWords: 3);
+            var criteria = new WordCombinationCriteria(maximumLength: 6);
 
             // Act
             var combinations = _wordService.GetWordsCombinations(allWords, criteria);
@@ -73,7 +73,7 @@ namespace KenzeCodingChallenge.Tests
         {
             // Arrange
             var allWords = new List<string> { "foo" };
-            var criteria = new WordCombinationCriteria(maximumLength: 6, minimumWords: 2, maximumWords: 3);
+            var criteria = new WordCombinationCriteria(maximumLength: 6);
 
             // Act
             var combinations = _wordService.GetWordsCombinations(allWords, criteria);
@@ -82,25 +82,5 @@ namespace KenzeCodingChallenge.Tests
             Assert.That(combinations, Is.Not.Null);
             Assert.That(combinations, Is.Empty);
         }
-
-        [Test]
-        public void GetWordsCombinations_WithValidCriteria_ReturnsCombinationsWithinLimits()
-        {
-            // Arrange
-            var allWords = new List<string> { "foo", "bar", "foobar" };
-            var criteria = new WordCombinationCriteria(maximumLength: 6, minimumWords: 2, maximumWords: 2);
-
-            // Act
-            var combinations = _wordService.GetWordsCombinations(allWords, criteria);
-
-            // Assert
-            Assert.That(combinations, Is.Not.Null);
-            Assert.That(combinations.Count, Is.GreaterThan(0));
-            foreach (var key in combinations.Keys)
-            {
-                Assert.That(combinations[key].Count, Is.LessThanOrEqualTo(criteria.MaximumWords));
-            }
-        }
     }
-
 }

@@ -12,8 +12,7 @@ IWordService wordService = new WordService(wordRepository);
 try
 {
     var allWords = wordService.GetWords();
-    //(Note) => I've included the minimumWords in the params only so I could put the check there that it't can't be lower then 0.
-    var wordCombinations = wordService.GetWordsCombinations(allWords, new WordCombinationCriteria(maximumLength: 6, minimumWords: 2, maximumWords: int.MaxValue));
+    var wordCombinations = wordService.GetWordsCombinations(allWords, new WordCombinationCriteria(maximumLength: 6));
 
     var wordCombinationsThatAreInTheAllWordsList = wordService.FilterOutCombinationsThatAreNotInTheOrginalList(wordCombinations, allWords);
     foreach (var wordCombinationThatIsInOriginalist in wordCombinationsThatAreInTheAllWordsList)

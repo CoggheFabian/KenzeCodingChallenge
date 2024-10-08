@@ -36,6 +36,7 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+    		StartupProject = KenzeCodingChallenge.Presentation
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B6F81F5D-51A3-4EBD-86C2-6FB4819DF17C}

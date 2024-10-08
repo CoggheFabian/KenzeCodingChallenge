@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KenzeCodingChallenge.Presentation", "KenzeCodingChallangee\KenzeCodingChallenge.Presentation.csproj", "{00BC5998-E1A9-40DB-8D91-7766DAE3832B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KenzeCodingChallenge.DAL", "KenzeCodingChallenge.DAL\KenzeCodingChallenge.DAL.csproj", "{F7BDFBED-F555-4FF9-9A11-4905D59C7BBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KenzeCodingChallenge.Application", "KenzeCodingChallenge.Services\KenzeCodingChallenge.Application.csproj", "{630FCD0B-900F-4E0B-AC62-6589A3078885}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KenzeCodingChallenge.Application", "KenzeCodingChallenge.Services\KenzeCodingChallenge.Application.csproj", "{630FCD0B-900F-4E0B-AC62-6589A3078885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KenzeCodingChallenge.Tests", "KenzeCodingChallenge.Tests\KenzeCodingChallenge.Tests.csproj", "{D30A79BC-775A-4885-8648-EEFCA58D6968}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KenzeCodingChallenge.Tests", "KenzeCodingChallenge.Tests\KenzeCodingChallenge.Tests.csproj", "{D30A79BC-775A-4885-8648-EEFCA58D6968}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KenzeCodingChallenge.Presentation", "KenzeCodingChallenge.Presentation\KenzeCodingChallenge.Presentation.csproj", "{859549D7-47B9-4016-A5FB-29A2DC70C592}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{00BC5998-E1A9-40DB-8D91-7766DAE3832B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00BC5998-E1A9-40DB-8D91-7766DAE3832B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00BC5998-E1A9-40DB-8D91-7766DAE3832B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00BC5998-E1A9-40DB-8D91-7766DAE3832B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F7BDFBED-F555-4FF9-9A11-4905D59C7BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F7BDFBED-F555-4FF9-9A11-4905D59C7BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7BDFBED-F555-4FF9-9A11-4905D59C7BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{D30A79BC-775A-4885-8648-EEFCA58D6968}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D30A79BC-775A-4885-8648-EEFCA58D6968}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D30A79BC-775A-4885-8648-EEFCA58D6968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{859549D7-47B9-4016-A5FB-29A2DC70C592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{859549D7-47B9-4016-A5FB-29A2DC70C592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859549D7-47B9-4016-A5FB-29A2DC70C592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{859549D7-47B9-4016-A5FB-29A2DC70C592}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

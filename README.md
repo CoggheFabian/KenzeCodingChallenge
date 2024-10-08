@@ -1,3 +1,5 @@
+# To Run this project you should change the startup project to KenzeCodingChallenge.Presentation
+
 # 6 letter words
 There's a file in the root of the repository, input.txt, that contains words of varying lengths (1 to 6 characters).
 
